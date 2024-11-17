@@ -60,7 +60,7 @@ export function LoginForm() {
                       <FormControl>
                         <Input
                           type="text"
-                          placeholder="Enter username"
+                          placeholder="Enter your oracle username"
                           autoComplete="off"
                           required
                           {...field}
@@ -80,6 +80,7 @@ export function LoginForm() {
                       <FormLabel>Password</FormLabel>
                       <FormControl>
                         <Input
+                          placeholder="Enter your oracle password"
                           type="password"
                           autoComplete="off"
                           required
