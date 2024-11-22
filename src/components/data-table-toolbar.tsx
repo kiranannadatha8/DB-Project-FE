@@ -31,8 +31,8 @@ export function DataTableToolbar<TData>({
               Authors
             </TabsTrigger>
             <TabsTrigger
-              value="Table-filters"
-              onClick={() => setTab("Authors")}
+              value="table-filters"
+              onClick={() => setTab("table-filters")}
             >
               Table Filters
             </TabsTrigger>

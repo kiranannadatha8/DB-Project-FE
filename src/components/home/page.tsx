@@ -39,6 +39,14 @@ export default function HomePage() {
           setTab={setCurrentTab}
           currentTab={currentTab}
         />
+      ) : currentTab === "Authors" ? (
+        <DataTableWrapper
+          columns={authColumns}
+          data={authorData}
+          setTab={setCurrentTab}
+          currentTab={currentTab}
+          className="table-fixed"
+        />
       ) : (
         <DataTableWrapper
           columns={authColumns}

@@ -14,18 +14,25 @@ import {
 } from "@/components/ui/table";
 
 import { DataTablePagination } from "./data-table-pagination";
+import { EmptyState } from "./empty-state";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   table: TanTable<TData>;
   className?: string;
+  currentTab?: string;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   table,
   className,
+  currentTab,
 }: DataTableProps<TData, TValue>) {
+  if (currentTab === "table-filters") {
+    return <EmptyState />;
+  }
+
   return (
     <div className="space-y-4">
       <div className="rounded-md border">

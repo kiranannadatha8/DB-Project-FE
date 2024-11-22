@@ -70,7 +70,12 @@ export function DataTableWrapper<TData, TValue>({
           ))}
         </PopoverContent>
       </Popover> */}
-      <DataTable columns={columns} table={table} className={className} />
+      <DataTable
+        columns={columns}
+        table={table}
+        currentTab={currentTab}
+        className={className}
+      />
     </>
   );
 }
