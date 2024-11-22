@@ -8,7 +8,6 @@ export function ModeToggle() {
 
   return (
     <Button
-      className="absolute top-5 right-8"
       variant="outline"
       size="icon"
       onClick={() => (theme === "light" ? setTheme("dark") : setTheme("light"))}
